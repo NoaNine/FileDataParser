@@ -7,9 +7,14 @@ namespace FileParsingApp
         public void ParseLine(string path)
         {
             List<Line> lines = new List<Line>();
-            foreach(string line in File.ReadLines(path))
+            CopyFile(lines, path);
+        }
+
+        private void CopyFile(List<Line> lines, string path)
+        {
+            foreach (string line in File.ReadLines(path))
             {
-                Console.WriteLine(line);
+                lines.Add(new Line(line.ToCharArray()));
             }
         }
 

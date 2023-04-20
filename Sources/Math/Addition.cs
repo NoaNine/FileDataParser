@@ -2,19 +2,9 @@
 {
     public class Addition
     {
-        public double Sum(char[] line, int start, int end) 
+        public double Sum(char[] line) 
         {
-            int sum = 0;
-            while (start < end)
-            {
-
-            }
-            return sum; 
-        }
-
-        public double Sum(int a, int b) 
-        {
-            return a + b;
+            return 0; 
         }
     }
 }

@@ -5,14 +5,12 @@
         static void Main(string[] args)
         {
             Console.WriteLine(Properties.Messages.Greeting);
-            InputFile inputFile = new InputFile();
+            Input input = new Input();
             Parser parser = new Parser();
-            string path = @"E:\Foxminded\Task3\Documents\SomeFile.txt";
-            parser.ParseLine(path);
-            //foreach (string a in args)
-            //{
-            //    parser.Parsing(inputFile.Input(a));
-            //}
+            foreach (string a in args)
+            {
+                parser.ParseLine(input.InputPath(a));
+            }
         }
     }
 }

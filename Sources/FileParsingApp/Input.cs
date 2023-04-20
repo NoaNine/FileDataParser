@@ -3,9 +3,9 @@ using System.IO;
 
 namespace FileParsingApp
 {
-    internal class InputFile
+    internal class Input
     {
-        public string Input(string arg) 
+        public string InputPath(string arg) 
         {
             if (!string.IsNullOrEmpty(arg))
             {
