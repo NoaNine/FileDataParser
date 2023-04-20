@@ -4,20 +4,29 @@ namespace FileParsingApp
 {
     internal class InputFile
     {
-        public string InputPath(string arg) 
+        public string Input(string arg) 
         {
-            if (string.IsNullOrEmpty(arg))
+            if (!string.IsNullOrEmpty(arg))
             {
-                Console.WriteLine(Properties.Messages.Input);
-                string path = Console.ReadLine();
-                CheckExists(path);
-            }
-            else
-            {
+                CheckFormat(arg);
                 CheckExists(arg);
                 return arg;
             }
-            return "";
+            return InputPathFromConsole();
+        }
+
+        private string InputPathFromConsole()
+        {
+            Console.WriteLine(Properties.Messages.Input);
+            string path = Console.ReadLine();
+            CheckFormat(path);
+            CheckExists(path);
+            return path;
+        }
+
+        private void CheckFormat(string input)
+        {
+
         }
 
         private void CheckExists(string path)

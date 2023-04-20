@@ -79,7 +79,7 @@ namespace FileParsingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Write the path of the file and hit enter.
+        ///   Looks up a localized string similar to Write the path of the file for example &quot;E:\Foxminded\Task3\Documents\file&quot; and hit enter.
         /// </summary>
         internal static string Input {
             get {
