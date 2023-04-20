@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataFile\DataFile.csproj" />
+    <ProjectReference Include="..\Math\Math.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Messages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
