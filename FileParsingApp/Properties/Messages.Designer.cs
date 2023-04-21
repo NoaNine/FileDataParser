@@ -61,7 +61,7 @@ namespace FileParsingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wrong elements: .
+        ///   Looks up a localized string similar to Line numbers with the non numerical elements: .
         /// </summary>
         internal static string Broken {
             get {
@@ -88,20 +88,11 @@ namespace FileParsingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application to find the sum of numbers in a row in a file and ouput the maximum value.
+        ///   Looks up a localized string similar to Line numbers with the maximum sum of elements: .
         /// </summary>
-        internal static string Instruction {
+        internal static string Output {
             get {
-                return ResourceManager.GetString("Instruction", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Maximum value: .
-        /// </summary>
-        internal static string Sum {
-            get {
-                return ResourceManager.GetString("Sum", resourceCulture);
+                return ResourceManager.GetString("Output", resourceCulture);
             }
         }
     }
