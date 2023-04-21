@@ -1,45 +1,16 @@
-# Task2
+# Task3
 
 Проект створено Гавлицьким Олександром в учбових цілях на курсі FoxmindEd.
 
-Мета проекту повертати на консоль слід довільної матриці.
-
 Опис задачі:
-Users input matrix dimensions into the program (columns and lines).
+Program should find the maximum sum of elements in line from the list of lines.
 
-Program fill matrix with random numbers (from 0 till 100 included).
+Program will take path to file as input (user can enter path in console application or send as command line interface argument if they exist).
 
+Each line of the file contains a number set (number separator is comma, decimal separator is point).
 
+Result should be the number of the line with a maximum sum of elements in line.
 
-Program should find a matrix trace.
+If line contains non numeric elements - line marked as broken.
 
-Matrix trace is the sum of all elements on the main diagonal.
-
-Main diagonal of the square matrix is the diagonal which starts in the top left corner and finishes in the bottom right corner.
-
-Main diagonal for a rectangle matrix is the line, which starts in the top left corner and moves right and down, till the border (bottom or right) of the matrix.
-
-
-Program should print the filled matrix into the console. Main diagonal should be highlighted.
-
-
-
-
-
-Enhanced task (is not required, for students who feel in power to do):
-
-Print to the console elements from the matrix going like snail shells from border to center.
-
-Example
-
-Input:
-
-1 2 3 4
-
-8 7 6 5
-
-4 3 2 9
-
-Output:
-
-1, 2, 3, 4, 5, 9, 2, 3, 4, 8, 7, 6
+As a separate list, write a number of lines with non numeric elements (“wrong elements”).
