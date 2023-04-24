@@ -6,7 +6,7 @@ namespace FileParsingApp
     {
         static void Main(string[] args)
         {
-            string path = @"E:\Foxminded\Task3\Files";
+            string path = @"E:\Foxminded\Task3\Files\SomeFile.txt";
         }
     }
 }
