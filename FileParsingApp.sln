@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileParsingApp", "FileParsingApp\FileParsingApp.csproj", "{A25755FD-C384-499A-9DE1-70FFF1B6756D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math", "Math\Math.csproj", "{4AE5058C-9786-439C-B072-C54432CBB6DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math", "Math\Math.csproj", "{4AE5058C-9786-439C-B072-C54432CBB6DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathTest", "MathTest\MathTest.csproj", "{CF8F0642-357F-4905-A55A-28B11E5F69B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4AE5058C-9786-439C-B072-C54432CBB6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE5058C-9786-439C-B072-C54432CBB6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AE5058C-9786-439C-B072-C54432CBB6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8F0642-357F-4905-A55A-28B11E5F69B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8F0642-357F-4905-A55A-28B11E5F69B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8F0642-357F-4905-A55A-28B11E5F69B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8F0642-357F-4905-A55A-28B11E5F69B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
