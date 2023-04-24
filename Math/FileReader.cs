@@ -2,15 +2,11 @@
 {
     public class FileReader
     {
-        public List<string> Reader(string path)
+        public string[] Reader(string path)
         {
             CheckExist(path);
-            List<string> rows = new List<string>();
-            foreach(string line in File.ReadLines(path)) 
-            { 
-                rows.Add(line); 
-            }
-            return new List<string>();
+            string[] list = File.ReadAllLines(path);
+            return list;
         }
 
         private void CheckExist(string path)
