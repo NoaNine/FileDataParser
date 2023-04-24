@@ -23,14 +23,5 @@ namespace Math
                 data[i][j] = Double.Parse(rowElements[j], new NumberFormatInfo { NumberDecimalSeparator = "." });
             }
         }
-
-        private bool CheckNonNumericSymbol(string row, int j)
-        {
-            if (!char.IsNumber(row[j]) && row[j] != ',' && row[j] != '.')
-            { 
-                return true; 
-            }
-            return false;
-        }
     }
 }

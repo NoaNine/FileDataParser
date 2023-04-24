@@ -7,8 +7,6 @@ namespace FileParsingApp
         static void Main(string[] args)
         {
             string path = @"E:\Foxminded\Task3\Files";
-            Console.WriteLine("Hello, World!");
-
         }
     }
 }
