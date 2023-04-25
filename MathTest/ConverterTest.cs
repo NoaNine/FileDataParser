@@ -10,8 +10,8 @@ namespace MathTest
         public void ConvertStringToDoubleTest(string[] input, double?[][] expected)
         {
             Converter converter = new Converter();
-            var actual = converter.Convert(input);
-            Assert.AreEqual(expected, actual);
+            double?[][] actual = converter.Convert(input);
+            CollectionAssert.AreEquivalent(expected, actual);
         }
     }
 }

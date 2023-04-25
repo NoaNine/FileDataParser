@@ -11,7 +11,7 @@ namespace MathTest
         {
             FileReader fileReader = new FileReader();
             string[] actual = fileReader.Read(input);
-            Assert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         [DataTestMethod]

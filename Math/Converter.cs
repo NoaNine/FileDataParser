@@ -22,9 +22,9 @@ namespace Math
             double?[] dataRow = new double?[rowElements.Length];
             for (int j = 0; j < rowElements.Length; j++)
             {
-                if(double.TryParse(rowElements[j], out double broken))
+                if(double.TryParse(rowElements[j], out double doubles))
                 {
-                    dataRow[j] = broken;
+                    dataRow[j] = doubles;
                 }
                 else
                 {

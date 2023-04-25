@@ -124,7 +124,7 @@
     <value>Hi, App "Parsing file" and more. Developer Oleksandr Havlytskyi 2023</value>
   </data>
   <data name="Input" xml:space="preserve">
-    <value>Write the path of the file for example "E:\Foxminded\Task3\Documents\file" and hit enter</value>
+    <value>Write the path of the directory for example "E:\Foxminded\Task3\Documents" and hit enter</value>
   </data>
   <data name="Output" xml:space="preserve">
     <value>Line numbers with the maximum sum of elements: </value>
