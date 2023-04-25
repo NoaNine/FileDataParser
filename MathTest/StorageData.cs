@@ -14,11 +14,11 @@
                         "2,12,23,45",
                         "1"
                     },
-                    new double[][] 
+                    new double?[][] 
                     {
-                        new double[] { 1, 2, 5 },
-                        new double[] { 2, 12, 23, 45 },
-                        new double[] { 1 }
+                        new double?[] { 1, 2, 5 },
+                        new double?[] { 2, 12, 23, 45 },
+                        new double?[] { 1 }
                     }
                 },
 
@@ -30,11 +30,11 @@
                         "2,12.888,23.3,45",
                         "1.2"
                     },
-                    new double[][]
+                    new double?[][]
                     {
-                        new double[] { 1.5, 2, 5 },
-                        new double[] { 2, 12.888, 23.3, 45 },
-                        new double[] { 1.2 }
+                        new double?[] { 1.5, 2, 5 },
+                        new double?[] { 2, 12.888, 23.3, 45 },
+                        new double?[] { 1.2 }
                     }
                 },
 
@@ -47,12 +47,12 @@
                         "1.2",
                         "10,23,1000"
                     },
-                    new double[][]
+                    new double?[][]
                     {
-                        new double[] { 0 },
-                        new double[] { 0 },
-                        new double[] { 1.2 },
-                        new double[] { 10, 23, 1000 }
+                        new double?[] { 0 },
+                        new double?[] { 0 },
+                        new double?[] { 1.2 },
+                        new double?[] { 10, 23, 1000 }
                     }
                 }
             };
@@ -84,9 +84,18 @@
                     @"E:\Foxminded\Task3\Files\Test2.txt",
                     new string[]
                     {
-                        "dfb,345",
-                        "67,3",
+                        "dfb,345 67,3",
                         "56,fg"
+                    }
+                },
+
+                new object[]
+                {
+                    @"E:\Foxminded\Task3\Files\Test3.txt",
+                    new string[]
+                    {
+                    "23,2345,",
+                    "3246dfb,sdfb,   ; '21 23,24,5, ,56 "
                     }
                 }
             };

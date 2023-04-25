@@ -5,23 +5,33 @@ namespace Math
 {
     public class Converter
     {
-        public double[][] Convert(string[] rows)
+        public double?[][] Convert(string[] rows)
         {
-            double[][] data = new double[rows.Length][];
+            double?[][] data = new double?[rows.Length][];
             for (int i = 0; i < rows.Length; i++)
             {
+                CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
                 string[] rowElements = rows[i].Split(',');
-                ConvertAllToDouble(data, rowElements, i);
+                data[i] = ConvertAllToDouble(rowElements);
             }
             return data;
         }
 
-        private void ConvertAllToDouble(double[][] data, string[] rowElements, int i)
+        private double?[] ConvertAllToDouble(string[] rowElements)
         {
+            double?[] dataRow = new double?[rowElements.Length];
             for (int j = 0; j < rowElements.Length; j++)
             {
-                data[i][j] = Double.Parse(rowElements[j], new NumberFormatInfo { NumberDecimalSeparator = "." });
+                if(double.TryParse(rowElements[j], out double broken))
+                {
+                    dataRow[j] = broken;
+                }
+                else
+                {
+                    return new double?[] { null };
+                }
             }
+            return dataRow;
         }
     }
 }

@@ -2,14 +2,14 @@
 {
     public class FileReader
     {
-        public string[] Reader(string path)
+        public string[] Read(string path)
         {
-            CheckExist(path);
+            ThrowIfNotExists(path);
             string[] list = File.ReadAllLines(path);
             return list;
         }
 
-        private void CheckExist(string path)
+        private void ThrowIfNotExists(string path)
         {
             if (!File.Exists(path))
             {

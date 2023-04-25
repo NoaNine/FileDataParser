@@ -10,17 +10,17 @@ namespace MathTest
         public void ReaderTest(string input, string[] expected)
         {
             FileReader fileReader = new FileReader();
-            string[] actual = fileReader.Reader(input);
+            string[] actual = fileReader.Read(input);
             Assert.AreEqual(expected, actual);
         }
 
         [DataTestMethod]
         [ExpectedException(typeof(FileNotFoundException))]
-        public void ExistFileTest()
+        public void ThrowIfNotExistsTest()
         {
-            string path = @"E:\Foxminded\Task3\Files\Test1000.txt";
+            string path = @"E:\Foxminded\Task3\";
             FileReader fileReader = new FileReader();
-            fileReader.Reader(path);
+            fileReader.Read(path);
         }
     }
 }
