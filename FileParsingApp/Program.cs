@@ -8,7 +8,6 @@ namespace FileParsingApp
         static void Main(string[] args)
         {
             string path = @"Files\SomeFile.txt";
-            Console.WriteLine(File.ReadAllText(path));
         }
     }
 }

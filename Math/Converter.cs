@@ -23,7 +23,7 @@ namespace Math
             if (IsEmpty(rowElements))
             {
                 dataRow = null;
-                return dataRow.ToArray();
+                return dataRow?.ToArray();
             }
             for (int j = 0; j < rowElements.Length; j++)
             {
