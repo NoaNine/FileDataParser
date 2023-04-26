@@ -9,6 +9,7 @@
             {
                 if (data[i] == null)
                 {
+                    
                     result.BrokenRows.Add(i);
                     continue;
                 }
