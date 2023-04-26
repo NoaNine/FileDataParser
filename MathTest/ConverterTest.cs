@@ -6,12 +6,17 @@ namespace MathTest
     public class ConverterTest
     {
         [DataTestMethod]
-        [DynamicData(nameof(StorageData.Data_ConvertStringToDoubleTest), typeof(StorageData), DynamicDataSourceType.Method)]
+        [DynamicData(nameof(Data.DataConverterTest.Data_ConvertStringToDoubleTest), typeof(Data.DataConverterTest), DynamicDataSourceType.Method)]
         public void ConvertStringToDoubleTest(string[] input, double?[][] expected)
         {
             Converter converter = new Converter();
-            double?[][] actual = converter.Convert(input);
-            CollectionAssert.AreEquivalent(expected, actual);
+            double[][] actual = converter.ConvertEnUS(input);
+            Assert.AreEqual(expected.Length, actual.Length);
+            for (int i = 0; i < actual.Length; i++)
+            {
+                CollectionAssert.AreEquivalent(expected[i], actual[i]);
+            }
+
         }
     }
 }

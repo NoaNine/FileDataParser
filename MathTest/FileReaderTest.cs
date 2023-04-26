@@ -6,7 +6,7 @@ namespace MathTest
     public class FileReaderTest
     {
         [DataTestMethod]
-        [DynamicData(nameof(StorageData.Data_ReaderTest), typeof(StorageData), DynamicDataSourceType.Method)]
+        [DynamicData(nameof(Data.DataFileReaderTest.Data_ReaderTest), typeof(Data.DataFileReaderTest), DynamicDataSourceType.Method)]
         public void ReaderTest(string input, string[] expected)
         {
             FileReader fileReader = new FileReader();

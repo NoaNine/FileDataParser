@@ -1,3 +1,5 @@
+using Math;
+
 namespace MathTest
 {
     [TestClass]
