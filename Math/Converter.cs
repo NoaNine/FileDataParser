@@ -18,13 +18,17 @@ namespace Math
         private double[] Convert(string row)
         {
             List<double> dataRow = new List<double>();
-            // check row
+            ArgumentNullException.ThrowIfNull(row);
             string[] rowElements = row.Split(',');
-            //check rowElements
+            if (IsEmpty(rowElements))
+            {
+                dataRow = null;
+                return dataRow.ToArray();
+            }
             for (int j = 0; j < rowElements.Length; j++)
             {
                 double doubles;
-                if(!double.TryParse(rowElements[j], out doubles))
+                if (!double.TryParse(rowElements[j], out doubles))
                 {
                     dataRow = null;
                     break;
@@ -32,6 +36,18 @@ namespace Math
                 dataRow.Add(doubles);
             }
             return dataRow.ToArray();
+        }
+
+        private bool IsEmpty(string[] row)
+        {
+            for (int i = 0; i < row.Length; i++)
+            {
+                if (row[i] != string.Empty)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
