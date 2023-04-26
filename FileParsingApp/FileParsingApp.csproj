@@ -8,10 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="..\Files\SomeFile.txt" Link="Files\SomeFile.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Math\Math.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Properties\Messages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Messages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -24,6 +33,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Files\" />
   </ItemGroup>
 
 </Project>

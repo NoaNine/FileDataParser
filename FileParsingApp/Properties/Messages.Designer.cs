@@ -61,7 +61,7 @@ namespace FileParsingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Line numbers with the non numerical elements: .
+        ///   Looks up a localized string similar to Line numbers with the non numerical elements:.
         /// </summary>
         internal static string Broken {
             get {
@@ -79,7 +79,7 @@ namespace FileParsingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Write the path of the file for example &quot;E:\Foxminded\Task3\Documents\file&quot; and hit enter.
+        ///   Looks up a localized string similar to Write the path of the directory for example &quot;E:\Foxminded\Task3\Documents&quot; and hit enter.
         /// </summary>
         internal static string Input {
             get {
@@ -88,7 +88,7 @@ namespace FileParsingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Line numbers with the maximum sum of elements: .
+        ///   Looks up a localized string similar to Line numbers with the maximum sum of elements:.
         /// </summary>
         internal static string Output {
             get {

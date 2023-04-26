@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Broken" xml:space="preserve">
-    <value>Line numbers with the non numerical elements: </value>
+    <value>Line numbers with the non numerical elements:</value>
   </data>
   <data name="Greeting" xml:space="preserve">
     <value>Hi, App "Parsing file" and more. Developer Oleksandr Havlytskyi 2023</value>
@@ -127,6 +127,6 @@
     <value>Write the path of the directory for example "E:\Foxminded\Task3\Documents" and hit enter</value>
   </data>
   <data name="Output" xml:space="preserve">
-    <value>Line numbers with the maximum sum of elements: </value>
+    <value>Line numbers with the maximum sum of elements:</value>
   </data>
 </root>

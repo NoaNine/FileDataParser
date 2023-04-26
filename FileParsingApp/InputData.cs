@@ -18,7 +18,7 @@ namespace FileParsingApp
 
         private string InputDirectory()
         {
-            Console.WriteLine(Properties.Messages.Input);
+            Console.WriteLine(FileParsingApp.Properties.Messages.Input);
             string pathDirectory = Console.ReadLine();
             return pathDirectory;
         }
