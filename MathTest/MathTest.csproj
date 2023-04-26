@@ -10,7 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\Files\SomeFile.txt" Link="Files\SomeFile.txt" />
+    <Content Include="..\Files\SomeFile.txt" Link="Files\SomeFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Files\SomeFile2.txt" Link="Files\SomeFile2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Files\SomeFile3.txt" Link="Files\SomeFile3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

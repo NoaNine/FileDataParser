@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\Files\SomeFile.txt" Link="Files\SomeFile.txt" />
+    <Content Include="..\Files\SomeFile.txt" Link="Files\SomeFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

@@ -35,7 +35,7 @@ namespace Math
                 }
                 dataRow.Add(doubles);
             }
-            return dataRow.ToArray();
+            return dataRow?.ToArray();
         }
 
         private bool IsEmpty(string[] row)

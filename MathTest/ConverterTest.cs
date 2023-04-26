@@ -7,7 +7,7 @@ namespace MathTest
     {
         [DataTestMethod]
         [DynamicData(nameof(Data.DataConverterTest.Data_ConvertStringToDoubleTest), typeof(Data.DataConverterTest), DynamicDataSourceType.Method)]
-        public void ConvertStringToDoubleTest(string[] input, double?[][] expected)
+        public void ConvertStringToDoubleTest(string[] input, double[][] expected)
         {
             Converter converter = new Converter();
             double[][] actual = converter.ConvertEnUS(input);

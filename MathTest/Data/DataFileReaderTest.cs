@@ -8,7 +8,7 @@
             {
                 new object[]
                 {
-                    @"E:\Foxminded\Task3\Files\SomeFile.txt",
+                    @"Files\SomeFile.txt",
                     new string[]
                     {
                         "12,45.34,1245.345,675.2,23,2,4,9,0.5,0,0,467.45,5",
@@ -24,7 +24,7 @@
 
                 new object[]
                 {
-                    @"E:\Foxminded\Task3\Files\Test2.txt",
+                    @"Files\SomeFile2.txt",
                     new string[]
                     {
                         "dfb,345 67,3",
@@ -34,11 +34,11 @@
 
                 new object[]
                 {
-                    @"E:\Foxminded\Task3\Files\Test3.txt",
+                    @"Files\SomeFile3.txt",
                     new string[]
                     {
                     "23,2345,",
-                    "3246dfb,sdfb,   ; '21 23,24,5, ,56 "
+                    "3246dfb,sdfb,   ; '21 23,24,5, ,56     \\n"
                     }
                 }
             };

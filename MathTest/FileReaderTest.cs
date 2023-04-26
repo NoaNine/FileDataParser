@@ -18,7 +18,7 @@ namespace MathTest
         [ExpectedException(typeof(FileNotFoundException))]
         public void ThrowIfNotExistsTest()
         {
-            string path = @"E:\Foxminded\Task3\";
+            string path = @"Files\";
             FileReader fileReader = new FileReader();
             fileReader.Read(path);
         }
