@@ -4,12 +4,11 @@ namespace Math
 {
     public class Converter
     {
-        public double[][] ConvertEnUS(string[] rows)
+        public double[][] Convert(string[] rows)
         {
             double[][] data = new double[rows.Length][];
             for (int i = 0; i < rows.Length; i++)
             {
-                CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
                 data[i] = Convert(rows[i]);
             }
             return data;
@@ -20,6 +19,11 @@ namespace Math
             List<double> dataRow = new List<double>();
             ArgumentNullException.ThrowIfNull(row);
             string[] rowElements = row.Split(',');
+            NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
+            {
+                NumberDecimalSeparator = "."
+            };
+
             if (IsEmpty(rowElements))
             {
                 dataRow = null;
@@ -28,7 +32,7 @@ namespace Math
             for (int j = 0; j < rowElements.Length; j++)
             {
                 double doubles;
-                if (!double.TryParse(rowElements[j], out doubles))
+                if (!double.TryParse(rowElements[j], NumberStyles.Number, numberFormatInfo, out doubles))
                 {
                     dataRow = null;
                     break;

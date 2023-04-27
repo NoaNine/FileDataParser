@@ -5,22 +5,21 @@
         public AggregatorResult Maximum(double[][] data)
         {
             AggregatorResult result = new AggregatorResult();
-            for(int i  = 0; i < data.Length; i++)
+            result.Value = 0;
+            for (int i = 0; i < data.GetLength(0); i++)
             {
                 if (data[i] == null)
                 {
-                    
                     result.BrokenRows.Add(i);
                     continue;
                 }
-                double sum = GetSumAllElements(data[i]);
-                if (result.Value < sum)
+                double maxSum = GetSumAllElementsRow(data[i]);
+                if (result.Value < maxSum)
                 {
-                    result.Value = sum;
-                    result.FoundInRows.Add(i);
-                    continue;
+                    result.Value = maxSum;
+                    result.FoundInRows.Clear();
                 }
-                if(result.Value == sum)
+                if (result.Value == maxSum)
                 {
                     result.FoundInRows.Add(i);
                 }
@@ -28,7 +27,7 @@
             return result;
         }
 
-        private double GetSumAllElements(double[] data)
+        private double GetSumAllElementsRow(double[] data)
         {
             double sum = 0;
             for (int i = 0; i < data.Length; i++)

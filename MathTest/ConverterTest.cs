@@ -10,13 +10,12 @@ namespace MathTest
         public void ConvertStringToDoubleTest(string[] input, double[][] expected)
         {
             Converter converter = new Converter();
-            double[][] actual = converter.ConvertEnUS(input);
+            double[][] actual = converter.Convert(input);
             Assert.AreEqual(expected.Length, actual.Length);
             for (int i = 0; i < actual.Length; i++)
             {
                 CollectionAssert.AreEquivalent(expected[i], actual[i]);
             }
-
         }
     }
 }
