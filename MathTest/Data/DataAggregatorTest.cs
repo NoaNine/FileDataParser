@@ -40,7 +40,7 @@ namespace MathTest.Data
                     new AggregatorResult
                     {
                         Value = 125.9,
-                        FoundInRows = new List<int>() { 2, 3 }
+                        FoundInRows = new List<int>() { 3, 4 }
                     }
                 }
             };
@@ -62,7 +62,7 @@ namespace MathTest.Data
                     new AggregatorResult
                     {
                         Value = 26.5,
-                        BrokenRows = new List<int>() { 2, 3 }
+                        BrokenRows = new List<int>() { 3, 4 }
                     }
                 }
             };

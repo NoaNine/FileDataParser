@@ -17,5 +17,14 @@ namespace MathTest
                 CollectionAssert.AreEquivalent(expected[i], actual[i]);
             }
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void ThrowIfNotArgumentTest()
+        {
+            string[] strings = { };
+            Converter converter = new Converter();
+            converter.Convert(strings);
+        }
     }
 }
