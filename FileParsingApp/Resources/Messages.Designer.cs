@@ -63,9 +63,9 @@ namespace FileParsingApp.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Line numbers with the non numerical elements:.
         /// </summary>
-        internal static string Broken {
+        internal static string BrokenLines {
             get {
-                return ResourceManager.GetString("Broken", resourceCulture);
+                return ResourceManager.GetString("BrokenLines", resourceCulture);
             }
         }
         
@@ -90,9 +90,18 @@ namespace FileParsingApp.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Line numbers with the maximum sum of elements:.
         /// </summary>
-        internal static string Output {
+        internal static string OutputLines {
             get {
-                return ResourceManager.GetString("Output", resourceCulture);
+                return ResourceManager.GetString("OutputLines", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum sum of elements:.
+        /// </summary>
+        internal static string OutputValue {
+            get {
+                return ResourceManager.GetString("OutputValue", resourceCulture);
             }
         }
     }

@@ -6,8 +6,8 @@
         {
             string pathDirectory = InputDirectory();
             ThrowDirectoryNotFoundException(pathDirectory);
-            string[] file = Directory.GetFiles(pathDirectory);
-            return file;
+            string[] files = Directory.GetFiles(pathDirectory);
+            return files;
         }
 
         private string InputDirectory()
