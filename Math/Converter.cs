@@ -27,10 +27,6 @@ namespace Math
             List<double> dataRow = new List<double>();
             ArgumentNullException.ThrowIfNull(row);
             string[] rowElements = row.Split(lineSeparator);
-            //if (IsEmpty(rowElements))   
-            //{
-            //    return null;
-            //}
             for (int j = 0; j < rowElements.Length; j++)
             {
                 double doubles;
@@ -42,17 +38,5 @@ namespace Math
             }
             return dataRow?.ToArray();
         }
-
-        //private bool IsEmpty(string[] row)
-        //{
-        //    for (int i = 0; i < row.Length; i++)
-        //    {
-        //        if (!string.IsNullOrEmpty(row[i]))
-        //        {
-        //            return false;
-        //        }
-        //    }
-        //    return true;
-        //}
     }
 }
