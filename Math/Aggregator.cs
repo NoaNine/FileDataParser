@@ -5,12 +5,11 @@
         public AggregatorResult Maximum(double[][] data)
         {
             AggregatorResult result = new AggregatorResult();
-            result.Value = 0;
             for (int i = 0; i < data.GetLength(0); i++)
             {
-                if (data[i] == null)
+                if (data[i] == null || data[i].Length == 0)
                 {
-                    result.BrokenRows.Add(i);
+                    result.BrokenRows.Add(i+1);
                     continue;
                 }
                 double maxSum = GetSumAllElementsRow(data[i]);
@@ -21,7 +20,7 @@
                 }
                 if (result.Value == maxSum)
                 {
-                    result.FoundInRows.Add(i);
+                    result.FoundInRows.Add(i+1);
                 }
             }
             return result;

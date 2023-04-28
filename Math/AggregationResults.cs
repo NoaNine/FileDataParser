@@ -2,7 +2,7 @@
 
 namespace Math
 {
-    public class Result : AggregatorResult
+    public class AggregationResults : AggregatorResult
     {
         public DbSet<AggregatorResult> AggregatorResult { get; set; }
     }

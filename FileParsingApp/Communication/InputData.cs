@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FileParsingApp
+﻿namespace FileParsingApp.Communication
 {
     internal class InputData
     {
@@ -13,12 +7,12 @@ namespace FileParsingApp
             string pathDirectory = InputDirectory();
             ThrowDirectoryNotFoundException(pathDirectory);
             string[] file = Directory.GetFiles(pathDirectory);
-            return file; 
+            return file;
         }
 
         private string InputDirectory()
         {
-            Console.WriteLine(FileParsingApp.Properties.Messages.Input);
+            Console.WriteLine(FileParsingApp.Resources.Messages.Input);
             string pathDirectory = Console.ReadLine();
             return pathDirectory;
         }

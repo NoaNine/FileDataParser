@@ -4,8 +4,16 @@ namespace Math
 {
     public class Converter
     {
+        public char lineSeparator = ',';
+        public static string numberDecimalSeparator = ".";
+        private NumberFormatInfo _numberFormatInfo = new NumberFormatInfo() { NumberDecimalSeparator = numberDecimalSeparator };
+
         public double[][] Convert(string[] rows)
         {
+            if (rows.Length == 0)
+            {
+                throw new ArgumentException();
+            }
             double[][] data = new double[rows.Length][];
             for (int i = 0; i < rows.Length; i++)
             {
@@ -18,40 +26,33 @@ namespace Math
         {
             List<double> dataRow = new List<double>();
             ArgumentNullException.ThrowIfNull(row);
-            string[] rowElements = row.Split(',');
-            NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
-            {
-                NumberDecimalSeparator = "."
-            };
-
-            if (IsEmpty(rowElements))
-            {
-                dataRow = null;
-                return dataRow?.ToArray();
-            }
+            string[] rowElements = row.Split(lineSeparator);
+            //if (IsEmpty(rowElements))   
+            //{
+            //    return null;
+            //}
             for (int j = 0; j < rowElements.Length; j++)
             {
                 double doubles;
-                if (!double.TryParse(rowElements[j], NumberStyles.Number, numberFormatInfo, out doubles))
+                if (!double.TryParse(rowElements[j], NumberStyles.Number, _numberFormatInfo, out doubles))
                 {
-                    dataRow = null;
-                    break;
+                    return null;
                 }
                 dataRow.Add(doubles);
             }
             return dataRow?.ToArray();
         }
 
-        private bool IsEmpty(string[] row)
-        {
-            for (int i = 0; i < row.Length; i++)
-            {
-                if (row[i] != string.Empty)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
+        //private bool IsEmpty(string[] row)
+        //{
+        //    for (int i = 0; i < row.Length; i++)
+        //    {
+        //        if (!string.IsNullOrEmpty(row[i]))
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
     }
 }
