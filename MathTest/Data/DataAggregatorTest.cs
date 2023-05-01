@@ -1,4 +1,4 @@
-﻿using Math;
+﻿using Math.Models;
 
 namespace MathTest.Data
 {

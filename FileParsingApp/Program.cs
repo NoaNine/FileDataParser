@@ -1,4 +1,5 @@
 ﻿using Math;
+using Math.Models;
 using System.Threading.Channels;
 
 namespace FileParsingApp

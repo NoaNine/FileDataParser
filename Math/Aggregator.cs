@@ -1,4 +1,6 @@
-﻿namespace Math
+﻿using Math.Models;
+
+namespace Math
 {
     public class Aggregator
     {
