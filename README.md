@@ -17,3 +17,4 @@ Result should be the number of the line with a maximum sum of elements in line.
 If line contains non numeric elements - line marked as broken.
 
 As a separate list, write a number of lines with non numeric elements (“wrong elements”).
+
